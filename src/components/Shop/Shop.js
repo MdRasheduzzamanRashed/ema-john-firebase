@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   addToDb,
   deleteShoppingCart,
@@ -10,7 +10,6 @@ import Product from "../Product/Product";
 import "./Shop.css";
 
 const Shop = () => {
-  //   const { products, count } = useLoaderData();
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0);
   const [cart, setCart] = useState([]);
